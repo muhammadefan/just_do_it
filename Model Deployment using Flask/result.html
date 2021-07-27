@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+</head>
+<body>
+    <center>
+        <h1>PREDICTION RESULT</h1><br>
+
+        {% if data==0 %}
+        <h1>Iris-setosa</h1>
+        <img src="iris-setosa.jpg" alt="" style="width:280px; height:280px;"/><br>
+
+        {% elif data==1 %}
+        <h1>Iris-versicolor</h1>
+        <img src="iris-versicolor.jpg" alt="" style="width:280px; height:280px;"/><br>
+
+        {% elif data==2 %}
+        <h1>Iris-virginica</h1>
+        <img src="iris-virginica.jpg" alt="" style="width:280px; height:280px;"/><br> 
+        {% endif %}
+
+        <a href="/">back to homepage</a>
+    </center>
+</body>
+</html>
